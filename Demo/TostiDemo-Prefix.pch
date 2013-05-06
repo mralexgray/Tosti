@@ -1,7 +1,6 @@
 //
 // Prefix header for all source files of the 'Tosti' target in the 'Tosti' project
 //
-
 #ifdef __OBJC__
 #include "TargetConditionals.h"
 #if TARGET_OS_IPHONE
@@ -11,5 +10,5 @@
 #endif
 #import <Foundation/Foundation.h>
 #endif
-
-#import <NWLogging/NWLogging.h>
+#import <NWLog/NWLog.h>
+#define BMAIN NWAssertMainThread()

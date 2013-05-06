@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		7B1EA0AD1733E559007AB4E1 /* NWLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1EA0AB1733E549007AB4E1 /* NWLog.framework */; };
+		7B1EA0AE1733E55F007AB4E1 /* NWLog.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B1EA0AB1733E549007AB4E1 /* NWLog.framework */; };
+		7B1EA0CA1734126F007AB4E1 /* Keywords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA0C91734126F007AB4E1 /* Keywords.plist */; };
+		7B7E470817349F34005C8997 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E470717349F33005C8997 /* AtoZ.framework */; };
 		B35C98B3162B3453003A1D03 /* TOEval.h in Headers */ = {isa = PBXBuildFile; fileRef = B35C98A6162B3453003A1D03 /* TOEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35C98B4162B3453003A1D03 /* TOEval.h in Headers */ = {isa = PBXBuildFile; fileRef = B35C98A6162B3453003A1D03 /* TOEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35C98B6162B3453003A1D03 /* TOEval.m in Sources */ = {isa = PBXBuildFile; fileRef = B35C98A7162B3453003A1D03 /* TOEval.m */; };
@@ -49,7 +53,6 @@
 		B3769A03162962FA0050BAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A02162962FA0050BAD0 /* Cocoa.framework */; };
 		B3769A3D162969620050BAD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37699F1162962EA0050BAD0 /* Foundation.framework */; };
 		B3769A6516296A810050BAD0 /* libTosti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37699EE162962EA0050BAD0 /* libTosti.a */; };
-		B3769A6C16296BDF0050BAD0 /* NWLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A6B16296BDF0050BAD0 /* NWLogging.framework */; };
 		B3769A8C16298E200050BAD0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A8B16298E200050BAD0 /* SenTestingKit.framework */; };
 		B3769A8E16298E200050BAD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37699F1162962EA0050BAD0 /* Foundation.framework */; };
 		B3769AA216298E310050BAD0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A8B16298E200050BAD0 /* SenTestingKit.framework */; };
@@ -59,7 +62,6 @@
 		B3769AF41629981C0050BAD0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769AF31629981C0050BAD0 /* libz.dylib */; };
 		B3769AF6162998210050BAD0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769AF5162998210050BAD0 /* MessageUI.framework */; };
 		B39C0AC41630BE5F001BBAE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A02162962FA0050BAD0 /* Cocoa.framework */; };
-		B39C0ADA1630BEBF001BBAE6 /* NWLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A6B16296BDF0050BAD0 /* NWLogging.framework */; };
 		B39C0AED1630C140001BBAE6 /* libTosti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3769A01162962FA0050BAD0 /* libTosti.a */; };
 		B3AFDADC162F2D2E0050D1F8 /* TOValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AFDADA162F2D2E0050D1F8 /* TOValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3AFDADD162F2D2E0050D1F8 /* TOValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AFDADA162F2D2E0050D1F8 /* TOValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -94,6 +96,76 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B1EA0701733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B34EA6E815D4FFBA007B041F;
+			remoteInfo = NWLoggingCocoaStatic;
+		};
+		7B1EA0721733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B384684215D6BB8F00780B6C;
+			remoteInfo = NWLoggingTouchStatic;
+		};
+		7B1EA0741733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B386697815FD04B000EF217C;
+			remoteInfo = NWLoggingCocoaDemo;
+		};
+		7B1EA0761733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B384685315D6BBC500780B6C;
+			remoteInfo = NWLoggingTouchDemo;
+		};
+		7B1EA0781733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B34EA6FE15D4FFEF007B041F;
+			remoteInfo = NWLoggingMacDemo;
+		};
+		7B1EA07A1733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B384688915D6BC5700780B6C;
+			remoteInfo = NWLoggingCocoaTest;
+		};
+		7B1EA07C1733E138007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3AC2E2315D7CD71003F4F88;
+			remoteInfo = NWLoggingTouchTest;
+		};
+		7B1EA0A71733E549007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B1EA0821733E3E6007AB4E1;
+			remoteInfo = NWLog;
+		};
+		7B1EA0AA1733E549007AB4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B1EA0831733E3E6007AB4E1;
+			remoteInfo = NWLog;
+		};
+		7BA4E2811734C34C0013E78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD54ED89166803AC002D997D;
+			remoteInfo = JBShellView;
+		};
 		B3769A6616296A850050BAD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B37699E3162961570050BAD0 /* Project object */;
@@ -124,7 +196,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B1EA0AC1733E550007AB4E1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B1EA0AE1733E55F007AB4E1 /* NWLog.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NWLogging.xcodeproj; path = NWLogging/NWLogging.xcodeproj; sourceTree = "<group>"; };
+		7B1EA0C91734126F007AB4E1 /* Keywords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Keywords.plist; path = "../../../../../../../Users/localadmin/Downloads/Xcode_Projects/nst-RuntimeBrowser-924fc13/MacOSX/Keywords.plist"; sourceTree = "<group>"; };
+		7B7E470717349F33005C8997 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
+		7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JBShellView.xcodeproj; path = JBShellView/JBShellView.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B35C98A6162B3453003A1D03 /* TOEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOEval.h; sourceTree = "<group>"; };
 		B35C98A7162B3453003A1D03 /* TOEval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOEval.m; sourceTree = "<group>"; };
 		B35C98A8162B3453003A1D03 /* TOMem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMem.h; sourceTree = "<group>"; };
@@ -144,7 +233,6 @@
 		B3769A02162962FA0050BAD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B3769A261629635C0050BAD0 /* TostiCocoaFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TostiCocoaFramework-Info.plist"; sourceTree = "<group>"; };
 		B3769A39162969620050BAD0 /* TostiTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TostiTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3769A6B16296BDF0050BAD0 /* NWLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NWLogging.framework; path = Frameworks/NWLogging.framework; sourceTree = "<group>"; };
 		B3769A8A16298E200050BAD0 /* TostiTouchTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TostiTouchTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3769A8B16298E200050BAD0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B3769AA116298E310050BAD0 /* TostiCocoaTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TostiCocoaTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +297,6 @@
 				B3769AF41629981C0050BAD0 /* libz.dylib in Frameworks */,
 				B3769A6516296A810050BAD0 /* libTosti.a in Frameworks */,
 				B3769A3D162969620050BAD0 /* Foundation.framework in Frameworks */,
-				B3769A6C16296BDF0050BAD0 /* NWLogging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,18 +327,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7E470817349F34005C8997 /* AtoZ.framework in Frameworks */,
 				B39C0AED1630C140001BBAE6 /* libTosti.a in Frameworks */,
 				B39C0AC41630BE5F001BBAE6 /* Cocoa.framework in Frameworks */,
-				B39C0ADA1630BEBF001BBAE6 /* NWLogging.framework in Frameworks */,
+				7B1EA0AD1733E559007AB4E1 /* NWLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1EA0661733E136007AB4E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B1EA0711733E138007AB4E1 /* libNWLogging.a */,
+				7B1EA0731733E138007AB4E1 /* libNWLogging.a */,
+				7B1EA0751733E138007AB4E1 /* NWLoggingCocoaDemo.app */,
+				7B1EA0771733E138007AB4E1 /* NWLogging.app */,
+				7B1EA0791733E138007AB4E1 /* NWLogging */,
+				7B1EA07B1733E138007AB4E1 /* NWLoggingCocoaTest.octest */,
+				7B1EA07D1733E138007AB4E1 /* NWLoggingTouchTest.octest */,
+				7B1EA0AB1733E549007AB4E1 /* NWLog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BA4E27D1734C34B0013E78A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BA4E2821734C34C0013E78A /* JBShellView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B35C98A5162B3453003A1D03 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B3769AD3162991F40050BAD0 /* Supporting Files */,
 				B35C98A6162B3453003A1D03 /* TOEval.h */,
 				B35C98A7162B3453003A1D03 /* TOEval.m */,
 				B35C98A8162B3453003A1D03 /* TOMem.h */,
@@ -280,8 +392,11 @@
 		B37699E1162961570050BAD0 = {
 			isa = PBXGroup;
 			children = (
+				7B7E470717349F33005C8997 /* AtoZ.framework */,
 				B363EABD1629E570003E80C3 /* README.md */,
 				B3769A251629635C0050BAD0 /* Library */,
+				B3DAB2641630C77F00DEA919 /* Cocoa */,
+				7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */,
 				B3DAB2631630C77F00DEA919 /* Demo */,
 				B3769ABC16298E890050BAD0 /* Test */,
 				B37699F0162962EA0050BAD0 /* Frameworks */,
@@ -305,7 +420,6 @@
 		B37699F0162962EA0050BAD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3769A6B16296BDF0050BAD0 /* NWLogging.framework */,
 				B3769AF31629981C0050BAD0 /* libz.dylib */,
 				B3769AF5162998210050BAD0 /* MessageUI.framework */,
 				B37699F1162962EA0050BAD0 /* Foundation.framework */,
@@ -322,7 +436,6 @@
 			children = (
 				B35C98A5162B3453003A1D03 /* Core */,
 				B35C98AC162B3453003A1D03 /* Libs */,
-				B3769AD3162991F40050BAD0 /* Supporting Files */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -353,13 +466,12 @@
 				B3769A261629635C0050BAD0 /* TostiCocoaFramework-Info.plist */,
 			);
 			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B3DAB2631630C77F00DEA919 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B3DAB2641630C77F00DEA919 /* Cocoa */,
-				B3DAB26A1630C77F00DEA919 /* Shared */,
 				B3DAB26E1630C77F00DEA919 /* Touch */,
 				B3DAB27B1630C78500DEA919 /* Supporting Files */,
 			);
@@ -369,11 +481,15 @@
 		B3DAB2641630C77F00DEA919 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				B3DAB2651630C77F00DEA919 /* MainMenu.xib */,
+				7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */,
 				B3DAB2661630C77F00DEA919 /* TOCocoaAppDelegate.h */,
 				B3DAB2671630C77F00DEA919 /* TOCocoaAppDelegate.m */,
+				B3DAB26A1630C77F00DEA919 /* Shared */,
+				7B1EA0C91734126F007AB4E1 /* Keywords.plist */,
+				B3DAB2651630C77F00DEA919 /* MainMenu.xib */,
 			);
-			path = Cocoa;
+			name = Cocoa;
+			path = Demo/Cocoa;
 			sourceTree = "<group>";
 		};
 		B3DAB26A1630C77F00DEA919 /* Shared */ = {
@@ -382,7 +498,8 @@
 				B3DAB26B1630C77F00DEA919 /* TOConsoleController.h */,
 				B3DAB26C1630C77F00DEA919 /* TOConsoleController.m */,
 			);
-			path = Shared;
+			name = Shared;
+			path = ../Shared;
 			sourceTree = "<group>";
 		};
 		B3DAB26E1630C77F00DEA919 /* Touch */ = {
@@ -546,10 +663,12 @@
 				B39C0ABE1630BE5F001BBAE6 /* Sources */,
 				B39C0ABF1630BE5F001BBAE6 /* Frameworks */,
 				B39C0AC01630BE5F001BBAE6 /* Resources */,
+				7B1EA0AC1733E550007AB4E1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B1EA0A81733E549007AB4E1 /* PBXTargetDependency */,
 				B39C0AEC1630C13D001BBAE6 /* PBXTargetDependency */,
 			);
 			name = TostiCocoaDemo;
@@ -577,6 +696,16 @@
 			mainGroup = B37699E1162961570050BAD0;
 			productRefGroup = B37699EF162962EA0050BAD0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7BA4E27D1734C34B0013E78A /* Products */;
+					ProjectRef = 7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */;
+				},
+				{
+					ProductGroup = 7B1EA0661733E136007AB4E1 /* Products */;
+					ProjectRef = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B37699ED162962EA0050BAD0 /* TostiTouchStatic */,
@@ -589,6 +718,73 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7B1EA0711733E138007AB4E1 /* libNWLogging.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNWLogging.a;
+			remoteRef = 7B1EA0701733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA0731733E138007AB4E1 /* libNWLogging.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNWLogging.a;
+			remoteRef = 7B1EA0721733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA0751733E138007AB4E1 /* NWLoggingCocoaDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = NWLoggingCocoaDemo.app;
+			path = NWLogging.app;
+			remoteRef = 7B1EA0741733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA0771733E138007AB4E1 /* NWLogging.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = NWLogging.app;
+			remoteRef = 7B1EA0761733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA0791733E138007AB4E1 /* NWLogging */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = NWLogging;
+			remoteRef = 7B1EA0781733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA07B1733E138007AB4E1 /* NWLoggingCocoaTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NWLoggingCocoaTest.octest;
+			remoteRef = 7B1EA07A1733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA07D1733E138007AB4E1 /* NWLoggingTouchTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NWLoggingTouchTest.octest;
+			remoteRef = 7B1EA07C1733E138007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B1EA0AB1733E549007AB4E1 /* NWLog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NWLog.framework;
+			remoteRef = 7B1EA0AA1733E549007AB4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7BA4E2821734C34C0013E78A /* JBShellView.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JBShellView.app;
+			remoteRef = 7BA4E2811734C34C0013E78A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3769A37162969620050BAD0 /* Resources */ = {
@@ -624,6 +820,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DAB2871630C7B200DEA919 /* MainMenu.xib in Resources */,
+				7B1EA0CA1734126F007AB4E1 /* Keywords.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +942,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B1EA0A81733E549007AB4E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWLog;
+			targetProxy = 7B1EA0A71733E549007AB4E1 /* PBXContainerItemProxy */;
+		};
 		B3769A6716296A850050BAD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B37699ED162962EA0050BAD0 /* TostiTouchStatic */;
@@ -884,7 +1086,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Tosti;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -909,8 +1111,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Tosti;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -1117,22 +1320,20 @@
 		B39C0AD81630BE5F001BBAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/TostiDemo-Prefix.pch";
@@ -1146,10 +1347,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Demo/TostiCocoaDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1157,22 +1360,20 @@
 		B39C0AD91630BE5F001BBAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/TostiDemo-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1180,9 +1381,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Demo/TostiCocoaDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

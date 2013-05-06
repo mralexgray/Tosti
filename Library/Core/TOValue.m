@@ -4,172 +4,141 @@
 //
 //  Copyright (c) 2012 Tosti. All rights reserved.
 //
-
 #import "TOValue.h"
 #import <CoreGraphics/CoreGraphics.h>
-
 #include "TargetConditionals.h"
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #endif
-
-
 #define TOStructReturn(__type, __prop) if (strcmp(self.objCType, @encode(__type)) == 0) return TOValueGet(self, __type).__prop
-
-
 @implementation TOValue {
-    NSValue *_value;
+	NSValue *_value;
 }
-
-
 #pragma mark - NSValue Wrap
-
-- (id)initWithBytes:(const void *)bytes objCType:(const char *)type
+- (id)initWithBytes:(const void*)bytes objCType:(const char*)type
 {
-    self = [super init];
-    if (self) {
-        _value = [[NSValue alloc] initWithBytes:bytes objCType:type];
-    }
-    return self;
+	self = [super init];
+	if (self) {
+		_value = [[NSValue alloc] initWithBytes:bytes objCType:type];
+	}
+	return self;
 }
-
-- (id)initWithPointer:(const void *)pointer objCType:(const char *)type
+- (id)initWithPointer:(const void*)pointer objCType:(const char*)type
 {
-    self = [super init];
-    if (self) {
-        _value = [[NSValue alloc] initWithBytes:&pointer objCType:type];
-    }
-    return self;
+	self = [super init];
+	if (self) {
+		_value = [[NSValue alloc] initWithBytes:&pointer objCType:type];
+	}
+	return self;
 }
-
-- (void)getValue:(void *)bytes
+- (void)getValue:(void*)bytes
 {
-    [_value getValue:bytes];
+	[_value getValue:bytes];
 }
-
-- (void *)pointerValue
+- (void*)pointerValue
 {
-    return [_value pointerValue];
+	return [_value pointerValue];
 }
-
-- (const char *)objCType
+- (const char*)objCType
 {
-    return [_value objCType];
+	return [_value objCType];
 }
-
-- (NSString *)description
+- (NSString*)description
 {
-    return [_value description];
+	return [_value description];
 }
-
-
 #pragma mark - Foundation Struct Helpers
-
 - (NSUInteger)length
 {
-    TOStructReturn(NSRange, length);
-    return 0;
+	TOStructReturn(NSRange, length);
+	return 0;
 }
-
 - (NSUInteger)location
 {
-    TOStructReturn(NSRange, location);
-    return 0;
+	TOStructReturn(NSRange, location);
+	return 0;
 }
-
-
 #pragma mark - Core Graphics Struct Helpers
-
 - (CGPoint)origin
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGRect, origin);
+	TOStructReturn(CGRect, origin);
 #else
-    TOStructReturn(NSRect, origin);
+	TOStructReturn(NSRect, origin);
 #endif
-    return CGPointZero;
+	return CGPointZero;
 }
-
 - (CGSize)size
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGRect, size);
+	TOStructReturn(CGRect, size);
 #else
-    TOStructReturn(NSRect, size);
+	TOStructReturn(NSRect, size);
 #endif
-    return CGSizeZero;
+	return CGSizeZero;
 }
-
 - (CGFloat)x
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGPoint, x);
+	TOStructReturn(CGPoint, x);
 #else
-    TOStructReturn(NSPoint, x);
+	TOStructReturn(NSPoint, x);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)y
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGPoint, y);
+	TOStructReturn(CGPoint, y);
 #else
-    TOStructReturn(NSPoint, y);
+	TOStructReturn(NSPoint, y);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)width
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGSize, width);
+	TOStructReturn(CGSize, width);
 #else
-    TOStructReturn(NSSize, width);
+	TOStructReturn(NSSize, width);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)height
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(CGSize, height);
+	TOStructReturn(CGSize, height);
 #else
-    TOStructReturn(NSSize, height);
+	TOStructReturn(NSSize, height);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)top
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(UIEdgeInsets, top);
+	TOStructReturn(UIEdgeInsets, top);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)left
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(UIEdgeInsets, left);
+	TOStructReturn(UIEdgeInsets, left);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)bottom
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(UIEdgeInsets, bottom);
+	TOStructReturn(UIEdgeInsets, bottom);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 - (CGFloat)right
 {
 #if TARGET_OS_IPHONE
-    TOStructReturn(UIEdgeInsets, right);
+	TOStructReturn(UIEdgeInsets, right);
 #endif
-    return 0.f;
+	return 0.f;
 }
-
 @end
