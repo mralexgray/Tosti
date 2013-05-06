@@ -1,0 +1,6 @@
+[submodule "NWLogging"]
+	path = NWLogging
+	url = https://github.com/noodlewerk/NWLogging.git
+[submodule "JBShellView"]
+	path = JBShellView
+	url = https://github.com/mralexgray/JBShellView.git
