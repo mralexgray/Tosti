@@ -1,6 +1,8 @@
 [submodule "NWLogging"]
 	path = NWLogging
 	url = https://github.com/noodlewerk/NWLogging.git
+	ignore = dirty
 [submodule "JBShellView"]
 	path = JBShellView
 	url = https://github.com/mralexgray/JBShellView.git
+	ignore = dirty
