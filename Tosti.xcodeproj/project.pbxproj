@@ -24,7 +24,9 @@
 		7B1EA0AD1733E559007AB4E1 /* NWLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1EA0AB1733E549007AB4E1 /* NWLog.framework */; };
 		7B1EA0AE1733E55F007AB4E1 /* NWLog.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B1EA0AB1733E549007AB4E1 /* NWLog.framework */; };
 		7B1EA0CA1734126F007AB4E1 /* Keywords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA0C91734126F007AB4E1 /* Keywords.plist */; };
-		7B7E470817349F34005C8997 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7E470717349F33005C8997 /* AtoZ.framework */; };
+		7B21B67D17380E420093CE9B /* NWLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1EA0AB1733E549007AB4E1 /* NWLog.framework */; };
+		7B21B67E173810AD0093CE9B /* libTosti.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = B3769A01162962FA0050BAD0 /* libTosti.a */; };
+		7B21B680173810C70093CE9B /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B21B67F173810C70093CE9B /* AtoZ.framework */; };
 		B35C98B3162B3453003A1D03 /* TOEval.h in Headers */ = {isa = PBXBuildFile; fileRef = B35C98A6162B3453003A1D03 /* TOEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35C98B4162B3453003A1D03 /* TOEval.h in Headers */ = {isa = PBXBuildFile; fileRef = B35C98A6162B3453003A1D03 /* TOEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35C98B6162B3453003A1D03 /* TOEval.m in Sources */ = {isa = PBXBuildFile; fileRef = B35C98A7162B3453003A1D03 /* TOEval.m */; };
@@ -159,6 +161,13 @@
 			remoteGlobalIDString = 7B1EA0831733E3E6007AB4E1;
 			remoteInfo = NWLog;
 		};
+		7B21B67017380D970093CE9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B1EA0821733E3E6007AB4E1;
+			remoteInfo = NWLog;
+		};
 		7BA4E2811734C34C0013E78A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */;
@@ -203,7 +212,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7B21B67E173810AD0093CE9B /* libTosti.a in CopyFiles */,
 				7B1EA0AE1733E55F007AB4E1 /* NWLog.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B21B67C17380E340093CE9B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +230,8 @@
 
 /* Begin PBXFileReference section */
 		7B1EA0651733E136007AB4E1 /* NWLogging.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NWLogging.xcodeproj; path = NWLogging/NWLogging.xcodeproj; sourceTree = "<group>"; };
-		7B1EA0C91734126F007AB4E1 /* Keywords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Keywords.plist; path = "../../../../../../../Users/localadmin/Downloads/Xcode_Projects/nst-RuntimeBrowser-924fc13/MacOSX/Keywords.plist"; sourceTree = "<group>"; };
-		7B7E470717349F33005C8997 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
+		7B1EA0C91734126F007AB4E1 /* Keywords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Keywords.plist; path = ../../../../dev/AtoZRuntime/MacOSX/Keywords.plist; sourceTree = "<group>"; };
+		7B21B67F173810C70093CE9B /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = "/Users/localadmin/Library/Developer/Xcode/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug/AtoZ.framework"; sourceTree = "<absolute>"; };
 		7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JBShellView.xcodeproj; path = JBShellView/JBShellView.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B35C98A6162B3453003A1D03 /* TOEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOEval.h; sourceTree = "<group>"; };
 		B35C98A7162B3453003A1D03 /* TOEval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOEval.m; sourceTree = "<group>"; };
@@ -284,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3769A03162962FA0050BAD0 /* Cocoa.framework in Frameworks */,
+				7B21B67D17380E420093CE9B /* NWLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +347,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7E470817349F34005C8997 /* AtoZ.framework in Frameworks */,
+				7B21B680173810C70093CE9B /* AtoZ.framework in Frameworks */,
 				B39C0AED1630C140001BBAE6 /* libTosti.a in Frameworks */,
 				B39C0AC41630BE5F001BBAE6 /* Cocoa.framework in Frameworks */,
 				7B1EA0AD1733E559007AB4E1 /* NWLog.framework in Frameworks */,
@@ -392,7 +412,6 @@
 		B37699E1162961570050BAD0 = {
 			isa = PBXGroup;
 			children = (
-				7B7E470717349F33005C8997 /* AtoZ.framework */,
 				B363EABD1629E570003E80C3 /* README.md */,
 				B3769A251629635C0050BAD0 /* Library */,
 				B3DAB2641630C77F00DEA919 /* Cocoa */,
@@ -420,6 +439,7 @@
 		B37699F0162962EA0050BAD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B21B67F173810C70093CE9B /* AtoZ.framework */,
 				B3769AF31629981C0050BAD0 /* libz.dylib */,
 				B3769AF5162998210050BAD0 /* MessageUI.framework */,
 				B37699F1162962EA0050BAD0 /* Foundation.framework */,
@@ -434,6 +454,7 @@
 		B3769A251629635C0050BAD0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */,
 				B35C98A5162B3453003A1D03 /* Core */,
 				B35C98AC162B3453003A1D03 /* Libs */,
 			);
@@ -481,7 +502,6 @@
 		B3DAB2641630C77F00DEA919 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				7BA4E27C1734C34B0013E78A /* JBShellView.xcodeproj */,
 				B3DAB2661630C77F00DEA919 /* TOCocoaAppDelegate.h */,
 				B3DAB2671630C77F00DEA919 /* TOCocoaAppDelegate.m */,
 				B3DAB26A1630C77F00DEA919 /* Shared */,
@@ -590,10 +610,12 @@
 				B37699FD162962FA0050BAD0 /* Sources */,
 				B37699FE162962FA0050BAD0 /* Frameworks */,
 				B37699FF162962FA0050BAD0 /* Headers */,
+				7B21B67C17380E340093CE9B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B21B67117380D970093CE9B /* PBXTargetDependency */,
 			);
 			name = TostiCocoaStatic;
 			productName = TostiCocoaStatic;
@@ -946,6 +968,11 @@
 			isa = PBXTargetDependency;
 			name = NWLog;
 			targetProxy = 7B1EA0A71733E549007AB4E1 /* PBXContainerItemProxy */;
+		};
+		7B21B67117380D970093CE9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWLog;
+			targetProxy = 7B21B67017380D970093CE9B /* PBXContainerItemProxy */;
 		};
 		B3769A6716296A850050BAD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1329,7 +1356,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1346,8 +1376,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Library/Frameworks/AtoZ.framework/Headers;
 				INFOPLIST_FILE = "Demo/TostiCocoaDemo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks /Library/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1370,7 +1401,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
@@ -1380,8 +1414,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Library/Frameworks/AtoZ.framework/Headers;
 				INFOPLIST_FILE = "Demo/TostiCocoaDemo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks /Library/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
