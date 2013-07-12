@@ -359,7 +359,7 @@
 			children = (
 				7B1EA0711733E138007AB4E1 /* libNWLogging.a */,
 				7B1EA0731733E138007AB4E1 /* libNWLogging.a */,
-				7B1EA0751733E138007AB4E1 /* NWLoggingCocoaDemo.app */,
+				7B1EA0751733E138007AB4E1 /* NWLogging.app */,
 				7B1EA0771733E138007AB4E1 /* NWLogging.app */,
 				7B1EA0791733E138007AB4E1 /* NWLogging */,
 				7B1EA07B1733E138007AB4E1 /* NWLoggingCocoaTest.octest */,
@@ -752,10 +752,9 @@
 			remoteRef = 7B1EA0721733E138007AB4E1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7B1EA0751733E138007AB4E1 /* NWLoggingCocoaDemo.app */ = {
+		7B1EA0751733E138007AB4E1 /* NWLogging.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			name = NWLoggingCocoaDemo.app;
 			path = NWLogging.app;
 			remoteRef = 7B1EA0741733E138007AB4E1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1109,7 +1108,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Tosti;
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1136,7 +1135,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Tosti;
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1383,7 +1382,7 @@
 					AtoZ,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1424,7 +1423,7 @@
 					AtoZ,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
